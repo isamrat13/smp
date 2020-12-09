@@ -3,7 +3,8 @@ import { StyleSheet, Text, View, ActivityIndicator } from 'react-native';
 import * as Font from 'expo-font';
 import Constants from 'expo-constants';
 import { MaterialCommunityIcons } from 'react-native-vector-icons';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import { TouchableOpacity, TextInput } from 'react-native-gesture-handler';
+import CheckBox from '@react-native-community/checkbox';
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
@@ -98,6 +99,25 @@ export default class SMP extends Component {
               <TouchableOpacity style={styles.changeLocationButton}>
                 <MaterialCommunityIcons name="image" color={'#777'} size={25} />
               </TouchableOpacity>
+            </View>
+          </View>
+          <View style={styles.body}>
+            <View style={styles.searchArea}>
+              <CheckBox
+                value={false}
+                //onValueChange={}
+                style={styles.checkbox}
+              />
+              <View style={styles.searchBarContainer}>
+                <MaterialCommunityIcons
+                  name="magnify"
+                  color={'#000'}
+                  size={25}
+                />
+                <TextInput style={styles.searchBar}></TextInput>
+                <MaterialCommunityIcons name="close" color={'#000'} size={25} />
+              </View>
+              <MaterialCommunityIcons name="sort" color={'#000'} size={25} />
             </View>
           </View>
           {data.map((value, index) => {
