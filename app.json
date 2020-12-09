@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "SMP",
+    "slug": "smp",
+    "privacy": "public",
+    "platforms": ["ios", "android", "web"],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/SMP.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#45AAE2"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    }
+  }
+}
